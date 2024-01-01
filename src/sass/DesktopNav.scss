@@ -1,0 +1,50 @@
+@import "colors.scss";
+
+.desktopNav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 95%;
+  max-width: 145rem;
+
+  .logo {
+    width: 14rem;
+  }
+
+  .desktopItems {
+    align-items: center;
+    color: $white;
+    column-gap: 5rem;
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    font-size: 1.8rem;
+
+    li {
+      transition: all 0.3s;
+    }
+
+    li:not(.btnContainer):hover {
+      transform: scale(1.2);
+    }
+
+    .btnContainer {
+      button {
+        background-color: $white;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.8rem;
+        padding: 0.8rem 1.8rem;
+        transition: all 0.3s;
+      }
+
+      button:hover,
+      button:focus {
+        background-color: rgba(192, 241, 253, 0.361);
+        color: $white;
+      }
+    }
+  }
+}

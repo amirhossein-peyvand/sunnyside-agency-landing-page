@@ -1,0 +1,14 @@
+@import "./colors.scss";
+
+.mobileNav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 95%;
+  min-width: 20rem;
+
+  .menuLogo {
+    cursor: pointer;
+  }
+}
