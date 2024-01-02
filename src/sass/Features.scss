@@ -48,8 +48,80 @@
       transform: translateX(-50%);
       width: 115%;
     }
+
+    .redBgBtn::after {
+      background-color: $soft-red;
+      border-radius: 20px;
+      bottom: 4%;
+      content: "";
+      height: 5px;
+      left: 50%;
+      opacity: 0.3;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 115%;
+    }
   }
 
   .graphicDesign {
+    background: url("../assets/mobile/image-graphic-design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 60vh;
+
+    section {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      text-align: center;
+      color: $dark-desaturated-cyan;
+      width: 90%;
+
+      h5 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .photography {
+    background: url("../assets/mobile/image-photography.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 60vh;
+
+    section {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      text-align: center;
+      color: $dark-blue;
+      width: 90%;
+
+      h5 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+      }
+    }
   }
 }

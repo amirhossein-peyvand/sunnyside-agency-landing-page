@@ -1,0 +1,39 @@
+@import "colors.scss";
+
+.mainArea {
+  min-width: 20rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "transform"
+    "boxOne"
+    "standOut"
+    "boxTwo"
+    "graphicDesign"
+    "photography";
+
+  .transform {
+    grid-area: transform;
+  }
+
+  .boxOne {
+    grid-area: boxOne;
+  }
+
+  .standOut {
+    grid-area: standOut;
+  }
+
+  .boxTwo {
+    grid-area: boxTwo;
+  }
+
+  .graphicDesign {
+    grid-area: graphicDesign;
+  }
+
+  .photography {
+    grid-area: photography;
+  }
+}
