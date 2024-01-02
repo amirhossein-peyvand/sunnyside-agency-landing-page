@@ -1,9 +1,45 @@
 @import "colors.scss";
 
 .features {
+  min-width: 20rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "transform"
+    "boxOne"
+    "standOut"
+    "boxTwo"
+    "graphicDesign"
+    "photography";
+
+  .transform {
+    grid-area: transform;
+  }
+
+  .boxOne {
+    grid-area: boxOne;
+  }
+
+  .standOut {
+    grid-area: standOut;
+  }
+
+  .boxTwo {
+    grid-area: boxTwo;
+  }
+
+  .graphicDesign {
+    grid-area: graphicDesign;
+  }
+
+  .photography {
+    grid-area: photography;
+  }
+
   article {
     img {
       width: 100%;
+      height: 100%;
     }
   }
 
@@ -11,7 +47,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    padding: 6rem;
+    padding: 6rem 2rem;
     align-items: center;
     text-align: center;
 
@@ -23,7 +59,10 @@
     p {
       color: $dark-grayish-blue;
       font-size: 1.2rem;
-      line-height: 1.4;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+      word-spacing: 1px;
+      max-width: 65rem;
     }
 
     button {
@@ -45,6 +84,7 @@
       left: 50%;
       opacity: 0.3;
       position: absolute;
+      transition: all 0.2s;
       transform: translateX(-50%);
       width: 115%;
     }
@@ -59,7 +99,13 @@
       opacity: 0.3;
       position: absolute;
       transform: translateX(-50%);
+      transition: all 0.2s;
       width: 115%;
+    }
+
+    .yellowBgBtn:hover::after,
+    .redBgBtn:hover::after {
+      opacity: 0.6;
     }
   }
 
@@ -121,6 +167,172 @@
       p {
         font-size: 1.4rem;
         line-height: 1.4;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .features {
+    .textBox {
+      h3 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+
+      button {
+        font-size: 1.3rem;
+      }
+    }
+
+    .graphicDesign,
+    .photography {
+      section {
+        h5 {
+          font-size: 2.2;
+        }
+
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .features {
+    .textBox {
+      h3 {
+        font-size: 2.4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+
+      button {
+        font-size: 1.5rem;
+      }
+    }
+
+    .graphicDesign,
+    .photography {
+      section {
+        h5 {
+          font-size: 2.4;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 819px) {
+  .features {
+    .textBox {
+      h3 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.7rem;
+      }
+
+      button {
+        font-size: 1.6rem;
+      }
+    }
+
+    .graphicDesign,
+    .photography {
+      section {
+        h5 {
+          font-size: 2.5;
+        }
+
+        p {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "boxOne transform"
+      "standOut boxTwo"
+      "graphicDesign photography";
+
+    .transform {
+      grid-area: transform;
+    }
+
+    .boxOne {
+      grid-area: boxOne;
+      justify-content: center;
+    }
+
+    .standOut {
+      grid-area: standOut;
+    }
+
+    .boxTwo {
+      grid-area: boxTwo;
+      justify-content: center;
+    }
+
+    .graphicDesign {
+      grid-area: graphicDesign;
+      background-image: url("../assets/desktop/image-graphic-design.jpg");
+    }
+
+    .photography {
+      grid-area: photography;
+      background-image: url("../assets/desktop/image-photography.jpg");
+    }
+
+    .graphicDesign,
+    .photography {
+      section {
+        max-width: 50rem;
+        margin: auto;
+
+        h5 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .boxOne,
+    .boxTwo {
+      align-items: flex-start;
+      padding: 7rem;
+      row-gap: 5rem;
+
+      h3 {
+        font-size: 4rem;
+        text-align: left;
+      }
+
+      p {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 1.6;
+      }
+
+      button {
+        font-size: 1.7rem;
       }
     }
   }

@@ -9,6 +9,8 @@
   position: relative;
   height: 100vh;
   min-width: 20rem;
+  max-width: 180rem;
+  margin: auto;
 
   .content {
     align-items: center;
@@ -29,8 +31,44 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 350px) {
+  .header {
+    .content {
+      .title {
+        font-size: 4.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .header {
+    .content {
+      .title {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 819px) {
+  .header {
+    .content {
+      .title {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
   .header {
     background-image: url("../assets/desktop/image-header.jpg");
+
+    .content {
+      .title {
+        font-size: 7rem;
+      }
+    }
   }
 }

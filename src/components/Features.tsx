@@ -1,18 +1,18 @@
 import "../sass/Features.scss";
 import mobileTransform from "../assets/mobile/image-transform.jpg";
-import desktopTransform from "../assets/mobile/image-transform.jpg";
+import desktopTransform from "../assets/desktop/image-transform.jpg";
 import { useMediaQuery } from "react-responsive";
 import mobileStandOut from "../assets/mobile/image-stand-out.jpg";
 import desktopStandOut from "../assets/desktop/image-stand-out.jpg";
 
 const Features = () => {
-  const isGreaterThan768px = useMediaQuery({ query: "(min-width: 768px)" });
+  const isGreaterThan820px = useMediaQuery({ query: "(min-width: 820px)" });
 
   return (
     <section className="features">
       <article className="transform">
         <img
-          src={isGreaterThan768px ? desktopTransform : mobileTransform}
+          src={isGreaterThan820px ? desktopTransform : mobileTransform}
           alt="egg"
         />
       </article>
@@ -27,7 +27,7 @@ const Features = () => {
       </article>
       <article className="standOut">
         <img
-          src={isGreaterThan768px ? desktopStandOut : mobileStandOut}
+          src={isGreaterThan820px ? desktopStandOut : mobileStandOut}
           alt="stand-out"
         />
       </article>
