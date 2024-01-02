@@ -1,0 +1,55 @@
+@import "colors.scss";
+
+.features {
+  article {
+    img {
+      width: 100%;
+    }
+  }
+
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 6rem;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      color: $very-dark-desaturated-blue;
+      font-size: 2rem;
+    }
+
+    p {
+      color: $dark-grayish-blue;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      position: relative;
+      font-size: 1.1rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .yellowBgBtn::after {
+      background-color: $yellow;
+      border-radius: 20px;
+      bottom: 4%;
+      content: "";
+      height: 5px;
+      left: 50%;
+      opacity: 0.3;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 115%;
+    }
+  }
+
+  .graphicDesign {
+  }
+}
