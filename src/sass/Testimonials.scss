@@ -1,0 +1,155 @@
+@import "colors.scss";
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 1rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6rem;
+  min-width: 20rem;
+
+  .title {
+    text-transform: uppercase;
+    color: $dark-grayish-blue;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+
+  .profiles {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    align-items: center;
+
+    .profile {
+      width: 100%;
+      max-width: 35rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      row-gap: 3rem;
+
+      img {
+        width: 4.5rem;
+        border-radius: 50%;
+      }
+
+      .idea {
+        color: $very-dark-desaturated-blue;
+        letter-spacing: 0.3px;
+        word-spacing: 0.5px;
+        line-height: 1.5;
+        font-size: 1.3rem;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        span:first-child {
+          font-size: 1.4rem;
+          font-weight: 800;
+          color: $very-dark-desaturated-blue;
+        }
+
+        span:last-child {
+          color: $dark-grayish-blue;
+          font-size: 1.1rem;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .testimonials {
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .profiles {
+      .profile {
+        .idea {
+          font-size: 1.5rem;
+        }
+
+        .info {
+          span:first-child {
+            font-size: 1.6rem;
+          }
+
+          span:last-child {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .testimonials {
+    .title {
+      font-size: 1.7rem;
+    }
+
+    .profiles {
+      .profile {
+        .idea {
+          font-size: 1.6rem;
+        }
+
+        .info {
+          span:first-child {
+            font-size: 1.7rem;
+          }
+
+          span:last-child {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 819px) {
+  .testimonials {
+    .title {
+      font-size: 1.8rem;
+    }
+
+    .profiles {
+      .profile {
+        .idea {
+          font-size: 1.7rem;
+        }
+
+        .info {
+          span:first-child {
+            font-size: 1.8rem;
+          }
+
+          span:last-child {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .testimonials {
+    .profiles {
+      flex-direction: row;
+    }
+  }
+}
