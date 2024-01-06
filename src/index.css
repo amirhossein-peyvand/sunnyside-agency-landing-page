@@ -23,6 +23,14 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 #root {
   width: 100%;
 }
