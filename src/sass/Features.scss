@@ -54,6 +54,7 @@
     h3 {
       color: $very-dark-desaturated-blue;
       font-size: 2rem;
+      font-family: "Fraunces", serif;
     }
 
     p {
@@ -63,6 +64,7 @@
       letter-spacing: 0.4px;
       word-spacing: 1px;
       max-width: 65rem;
+      font-family: "Barlow", sans-serif;
     }
 
     button {
@@ -73,6 +75,7 @@
       font-size: 1.1rem;
       font-weight: 900;
       text-transform: uppercase;
+      font-family: "Fraunces", serif;
     }
 
     .yellowBgBtn::after {
@@ -167,6 +170,19 @@
       p {
         font-size: 1.4rem;
         line-height: 1.4;
+      }
+    }
+  }
+
+  .photography,
+  .graphicDesign {
+    section {
+      h5 {
+        font-family: "Fraunces", serif;
+      }
+
+      p {
+        font-family: "Barlow", sans-serif;
       }
     }
   }
