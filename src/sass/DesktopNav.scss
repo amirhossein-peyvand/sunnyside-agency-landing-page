@@ -5,8 +5,8 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 95%;
   max-width: 145rem;
+  width: 95%;
 
   .logo {
     width: 14rem;
@@ -18,12 +18,12 @@
     column-gap: 5rem;
     cursor: pointer;
     display: flex;
-    list-style: none;
     font-size: 1.6rem;
+    list-style: none;
 
     li {
-      transition: all 0.3s;
       font-family: "Barlow", sans-serif;
+      transition: all 0.3s;
     }
 
     li:not(.btnContainer):hover {
@@ -36,11 +36,11 @@
         border-radius: 25px;
         border: none;
         cursor: pointer;
-        font-size: 1.2rem;
         font-family: "Fraunces", serif;
+        font-size: 1.2rem;
         letter-spacing: 0.5px;
-        text-transform: uppercase;
         padding: 1rem 1.8rem;
+        text-transform: uppercase;
         transition: all 0.3s;
       }
 

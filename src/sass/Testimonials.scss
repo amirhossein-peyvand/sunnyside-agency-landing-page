@@ -1,52 +1,52 @@
 @import "colors.scss";
 
 .testimonials {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 7rem 1rem;
   justify-content: center;
-  align-items: center;
-  row-gap: 6rem;
   min-width: 20rem;
+  padding: 7rem 1rem;
+  row-gap: 6rem;
 
   .title {
-    text-transform: uppercase;
     color: $dark-grayish-blue;
+    font-family: "Fraunces", serif;
     font-size: 1.3rem;
     letter-spacing: 2px;
+    text-transform: uppercase;
     word-spacing: 2px;
-    font-family: "Fraunces", serif;
   }
 
   .profiles {
+    align-items: center;
+    column-gap: 5rem;
     display: flex;
     flex-direction: column;
-    column-gap: 5rem;
     row-gap: 5rem;
-    align-items: center;
 
     .profile {
-      width: 100%;
-      max-width: 35rem;
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
+      max-width: 35rem;
       row-gap: 4rem;
+      text-align: center;
+      width: 100%;
 
       img {
-        width: 4.5rem;
         border-radius: 50%;
+        width: 4.5rem;
       }
 
       .idea {
         color: $very-dark-desaturated-blue;
-        letter-spacing: 0.3px;
-        word-spacing: 0.5px;
-        line-height: 1.5;
-        font-size: 1.3rem;
         font-family: "Barlow", sans-serif;
+        font-size: 1.3rem;
+        letter-spacing: 0.3px;
+        line-height: 1.5;
+        word-spacing: 0.5px;
       }
 
       .info {
@@ -55,17 +55,16 @@
         row-gap: 0.5rem;
 
         span:first-child {
+          color: $very-dark-desaturated-blue;
+          font-family: "Fraunces", serif;
           font-size: 1.4rem;
           font-weight: 800;
-          color: $very-dark-desaturated-blue;
-
-          font-family: "Fraunces", serif;
         }
 
         span:last-child {
           color: $dark-grayish-blue;
-          font-size: 1.1rem;
           font-family: "Barlow", sans-serif;
+          font-size: 1.1rem;
           letter-spacing: 0.5px;
         }
       }

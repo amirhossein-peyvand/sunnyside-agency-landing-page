@@ -1,25 +1,25 @@
 @import "colors.scss";
 
 .mobile-menu-container {
-  width: 95%;
-  margin: 4rem auto;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: $white;
-  position: relative;
-  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
   padding: 2rem;
+  position: relative;
+  width: 95%;
+  z-index: 999;
 
   .menu-item {
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 1.5rem;
     color: $dark-grayish-blue;
+    cursor: pointer;
+    display: inline-block;
     font-family: "Barlow", sans-serif;
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
   }
 
   .menu-item:hover {
@@ -27,19 +27,19 @@
   }
 
   .contact-button {
-    font-family: "Fraunces", serif;
-    padding: 1.2rem 2.2rem;
-    margin: 5px;
-    border: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
     background-color: $yellow;
-    color: $very-dark-desaturated-blue;
-    font-weight: 700;
-    min-width: 100px;
     border-radius: 20px;
-    text-align: center;
+    border: none;
+    color: $very-dark-desaturated-blue;
     cursor: pointer;
+    font-family: "Fraunces", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 5px;
+    min-width: 100px;
+    padding: 1.2rem 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
     transition: all 0.2s;
   }
 
@@ -49,10 +49,10 @@
 }
 
 .mobile-menu-container::before {
+  border-bottom: 30px solid $white; /* Change the color and height as needed */
+  border-left: 30px solid transparent;
   content: "";
   position: absolute;
-  top: -10%;
   right: 0;
-  border-left: 30px solid transparent;
-  border-bottom: 30px solid $white; /* Change the color and height as needed */
+  top: -10%;
 }

@@ -1,9 +1,7 @@
 @import "colors.scss";
 
 .features {
-  min-width: 20rem;
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-areas:
     "transform"
     "boxOne"
@@ -11,6 +9,8 @@
     "boxTwo"
     "graphicDesign"
     "photography";
+  grid-template-columns: 1fr;
+  min-width: 20rem;
 
   .transform {
     grid-area: transform;
@@ -38,44 +38,44 @@
 
   article {
     img {
-      width: 100%;
       height: 100%;
+      width: 100%;
     }
   }
 
   .textBox {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
     padding: 6rem 2rem;
-    align-items: center;
+    row-gap: 2rem;
     text-align: center;
 
     h3 {
       color: $very-dark-desaturated-blue;
-      font-size: 2rem;
       font-family: "Fraunces", serif;
+      font-size: 2rem;
     }
 
     p {
       color: $dark-grayish-blue;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      letter-spacing: 0.4px;
-      word-spacing: 1px;
-      max-width: 65rem;
       font-family: "Barlow", sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.4px;
+      line-height: 1.5;
+      max-width: 65rem;
+      word-spacing: 1px;
     }
 
     button {
-      border: none;
       background-color: transparent;
+      border: none;
       cursor: pointer;
-      position: relative;
+      font-family: "Fraunces", serif;
       font-size: 1.1rem;
       font-weight: 900;
+      position: relative;
       text-transform: uppercase;
-      font-family: "Fraunces", serif;
     }
 
     .yellowBgBtn::after {
@@ -87,8 +87,8 @@
       left: 50%;
       opacity: 0.3;
       position: absolute;
-      transition: all 0.2s;
       transform: translateX(-50%);
+      transition: all 0.2s;
       width: 115%;
     }
 
@@ -103,7 +103,6 @@
       position: absolute;
       transform: translateX(-50%);
       transition: all 0.2s;
-      width: 115%;
     }
 
     .yellowBgBtn:hover::after,
@@ -113,23 +112,23 @@
   }
 
   .graphicDesign {
-    background: url("../assets/mobile/image-graphic-design.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background: url("../assets/mobile/image-graphic-design.jpg");
     height: 60vh;
+    position: relative;
 
     section {
-      position: absolute;
       bottom: 10%;
-      left: 50%;
-      transform: translateX(-50%);
+      color: $dark-desaturated-cyan;
       display: flex;
       flex-direction: column;
+      left: 50%;
+      position: absolute;
       row-gap: 2rem;
       text-align: center;
-      color: $dark-desaturated-cyan;
+      transform: translateX(-50%);
       width: 90%;
 
       h5 {
@@ -144,23 +143,23 @@
   }
 
   .photography {
-    background: url("../assets/mobile/image-photography.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background: url("../assets/mobile/image-photography.jpg");
     height: 60vh;
+    position: relative;
 
     section {
-      position: absolute;
       bottom: 10%;
-      left: 50%;
-      transform: translateX(-50%);
+      color: $dark-blue;
       display: flex;
       flex-direction: column;
+      left: 50%;
+      position: absolute;
       row-gap: 2rem;
       text-align: center;
-      color: $dark-blue;
+      transform: translateX(-50%);
       width: 90%;
 
       h5 {
@@ -283,11 +282,11 @@
 
 @media screen and (min-width: 820px) {
   .features {
-    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "boxOne transform"
       "standOut boxTwo"
       "graphicDesign photography";
+    grid-template-columns: repeat(2, 1fr);
 
     .transform {
       grid-area: transform;
@@ -308,20 +307,20 @@
     }
 
     .graphicDesign {
-      grid-area: graphicDesign;
       background-image: url("../assets/desktop/image-graphic-design.jpg");
+      grid-area: graphicDesign;
     }
 
     .photography {
-      grid-area: photography;
       background-image: url("../assets/desktop/image-photography.jpg");
+      grid-area: photography;
     }
 
     .graphicDesign,
     .photography {
       section {
-        max-width: 50rem;
         margin: auto;
+        max-width: 50rem;
 
         h5 {
           font-size: 3rem;
@@ -342,8 +341,8 @@
 
       p {
         font-size: 2rem;
-        text-align: left;
         line-height: 1.6;
+        text-align: left;
       }
 
       button {

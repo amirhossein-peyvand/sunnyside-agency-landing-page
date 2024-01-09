@@ -5,12 +5,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  margin: auto;
+  max-width: 180rem;
+  min-width: 20rem;
   padding-top: 2rem;
   position: relative;
-  height: 100vh;
-  min-width: 20rem;
-  max-width: 180rem;
-  margin: auto;
 
   .content {
     align-items: center;
@@ -26,8 +26,8 @@
 
     .title {
       color: $white;
-      font-size: 3rem;
       font-family: "Fraunces", serif;
+      font-size: 3rem;
     }
   }
 }
